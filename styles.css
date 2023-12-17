@@ -1,0 +1,360 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Almarai', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #D9AFD9;
+    /* background-image: linear-gradient(180deg, #6f35b1dc 0%, #7f35b1de 100%); */
+    background-image: linear-gradient(90deg, #ffdfdfdc 0%, #7f35b1de 100%);
+    color: #68559c;
+    text-align: center;
+    padding:30px;
+    padding-bottom: 30px;
+}
+.header-text{
+    text-align: left;
+    margin-left: 30px;
+}
+.header p{
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 400;
+    color: #544c81;
+    font-size: 2.2em;
+    margin-top: -20px;
+}
+
+.icon{
+    margin-left: 4%;
+    width: 160px;
+    height: 160px;
+}
+.header h1 {
+    margin-top: -20px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 5em;
+    font-weight: 00;
+}
+
+/* Section styles */
+
+
+section h2 {
+    color: #ffffff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Project Description styles */
+
+.project-description{
+    display: flex;
+    padding-top: 3%;
+    background-image: url("./images/background2.png");
+    background-repeat:no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+.project-description p {
+    margin-top: 240px;
+    margin-left: 40%;
+    margin-right: auto;
+    width: 40%;
+    color: rgb(85, 77, 122);
+    font-size: 2.7em;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: 'Saira Condensed', sans-serif;
+    width: 20%;
+    text-align: center;
+}
+.description-text{
+    margin-left: 2.5%;
+}
+.project-description h2 {
+    margin-top: 60px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
+    margin-left: 3%;
+    font-size: 6em;
+    line-height: 1.1;
+    width: 32%;
+}
+
+/* Donors and Affiliations styles */
+.donors-affiliations {
+    margin-top: 300px;
+    padding-top: 400px;
+    background-image: url("./images/background3.png");
+}
+.project-links{
+    background-image: url("./images/background4.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 60vh;
+    z-index: 1;
+}
+.donors-affiliations h2, .project-links h2{
+    text-align: center;
+    font-size: 5em;
+}
+.donors-affiliations p{
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 150px;
+    margin-top: 50px;
+    color: rgb(247, 245, 255);
+}
+.logos-div{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 350px;
+}
+.longevitygpt{
+    font-size: 4em;
+    font-weight: 600;
+}
+.zuzalu{
+    height: 250px;
+}
+.openai{
+    height: 250px;
+}
+.heales{
+    height: 250px;
+}
+.link-header{
+    margin-left: auto;
+    margin-right: 4%;
+    position: absolute;
+    margin-top: 30vh;
+    margin-left: 3%;
+}
+
+/* Mission styles */
+.mission p {
+    font-style: italic;
+}
+
+/* Project Links styles */
+.project-links ul {
+    list-style: none;
+}
+
+a, a:visited {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h3{
+    margin-top:0;
+}
+
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+}
+
+.main-container{
+    background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+.vase{
+    height: 500px;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 3em;
+}
+.navigation{
+    padding-top: 1200px;
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 90vw;
+    margin-left: 3%;;
+}
+.link-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sun{
+    height: 380px;
+}
+div.link-div.link-div2{
+ margin-top: -50px;
+}
+.link-div.link-div3{
+    margin-top: -100px;
+   }
+   a.link{
+    position: relative;
+   }
+   .link-1{
+font-size: 2.3em;
+   }
+   .link-2{
+    font-size: 1.5em;
+   }
+a.link:after{
+    content: "";
+    position: absolute;
+    height: 6px;
+    width: 0;
+    background: white;
+    border-radius: 50px;
+    transition: width 0.3s ease;
+}
+
+a.link-1:after {
+    bottom: 250px;
+}
+
+a.link-2:after {
+    bottom: 170px;
+}
+a.link-3:after {
+    bottom: 125px;
+    height: 4px;
+}
+a:hover:after{
+    width: 100%;
+}
+.future-plans{
+    margin-top: 200px;
+    color: white;
+}
+.description-project{
+    font-size: 2.5em;
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color:#534874;
+}
+.footer-image{
+    margin-top: -500px;
+    pointer-events: none;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+}
+.footer-image.reversed{
+    margin-top: 0px;
+}
+.chat-now{
+    margin-top: 200px;
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    font-size: 5em;
+}
+.arrow{
+    margin-top: -100px;
+    margin-left: 700px;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   margin-bottom: -450px;
+}
+.button-itself{
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+    border-bottom-left-radius: 10%;
+font-size: 2.7em;
+font-weight: 100;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items:end;
+}
+.terms_of_use{
+    font-size: 2em;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sun1{
+    position: absolute;
+    height: 500px;
+    border: 6px solid white;
+    padding: 0;
+    border-radius: 50%;
+    margin-bottom: -70px;
+    margin-left: -30px;
+}
+.button-itself section{
+    z-index: 10;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    text-align: center;
+}
+.github-logo{
+    z-index: 100;
+}
+.upper-image{
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+}
+.team{
+    width: 80%;
+}
+.member{
+    width: 80%;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 35%;
+    padding: 30px;
+    border-top-right-radius: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.member p{
+font-size: 1.8em;
+}
+.member h3{
+    font-size: 2.2em;
+    color:#7d4c94
+}
+.photo{
+    height: 270px;
+}
+.link-11{
+    font-size: 4em;
+    color: white;
+    text-decoration: underline;
+    left: 100px;
+}
+/* Responsive layout adjustments */
+@media screen and (max-width: 768px) {
+    .member {
+        flex: 0 1 calc(50% - 20px);
+    }
+}
