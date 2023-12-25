@@ -30,13 +30,33 @@
     <section class="project-description">
         <span class="description-text">
             <h2>Unlock the secrets to a longer, healthier life with Longevity Genie! </h2>
-            <p>Explore our open-source toolbox and chatbot designed to empower large language models in unraveling the mysteries of personal health, genetics, and groundbreaking longevity research. </p>
+            <p id="text">Explore our open-source toolbox and chatbot designed to empower large language models in unraveling the mysteries of personal health, genetics, and groundbreaking longevity research. </p>
         </span>
     </section>
     <div class="imagess">
-        <img class="sun-part" src="./images/sun-part.png">
-        <img class="scenary" src="./images/scenary.png">
+        <img id="sun" class="sun-part" src="./images/sun-part.png">
+        <img id="background" class="scenary" src="./images/scenary.png">
     </div>
+    <script>
+        let sun = document.getElementById("sun")
+        let text = document.getElementById("text")
+
+        window.addEventListener("scroll", function(){
+            let value = window.scrollY;
+            sun.style.top = 347 + value * 0.75 + "px";
+            sun.style.width = 100 -  value*0.05  + "%";
+            sun.style.marginLeft =   value*0.024  + "%";
+            sun.style.marginRight =   value*0.4  + "%";
+            text.style.top = (800 - value * 0.25) + "px";
+
+            if (value > 1020){
+                sun.style.visibility="hidden";
+            }
+            else{
+                sun.style.visibility="visible";
+            }
+        })
+    </script>
     <div class = "main-container">
          <!-- Project Links Section -->
     <section class="navigation">
