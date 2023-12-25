@@ -38,6 +38,16 @@ body {
     transform-style: preserve-3d;
     perspective: 1000px;
 }
+.animate-slide{
+    animation-duration: 0.5s;
+    animation-delay: 0.75s;
+    animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+    animation-fill-mode: backwards;
+    animation-timing-function: ease;
+    animation-name: animate-slide;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
 @keyframes animate-slide {
     0% {
       opacity: 0;
