@@ -8,6 +8,9 @@
     <link rel="preload" href="/images/background2.jpg" as="image">
     <link rel="preload" href="/images/background1.jpg" as="image">
     <link rel="preload" href="/images/background3.jpg" as="image">
+    <link rel="preload" href="/images/scenary.jpg" as="image">
+    <link rel="preload" href="/images/sun-part.jpg" as="image">
+    <link rel="preload" href="/images/background.jpg" as="image">
     <link rel="icon" href="./images/icon.png">
     <link rel="preload" href="/images/sun.jpg" as="image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,64 +26,83 @@
             <h1>Longevity Genie</h1>
             <p>Your Personal Genetics, and Longevity Research Open-Source Assistant</p>
         </span>
-       
+       <!-- <div id="menu" class="menu">
+            <span class="line line1">
+            </span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+       </div> -->
+       <div id="menu-hamburger" class="menu-hamburger">
+            <a><span class="nav">Features</span></a>
+            <a><span class="nav">About us</span></a>
+            <a><span class="nav">Terms of use</span></a>
+       </div>
 </header>
 
     <!-- Project Description Section -->
     <section class="project-description">
         <span class="description-text">
-            <h2>Unlock the secrets to a longer, healthier life with Longevity Genie! </h2>
+            <h2 id="textbig" class="appearing">Unlock the secrets to a longer, healthier life with Longevity Genie! </h2>
             <p id="text">Explore our open-source toolbox and chatbot designed to empower large language models in unraveling the mysteries of personal health, genetics, and groundbreaking longevity research. </p>
         </span>
     </section>
     <div class="imagess">
-        <img id="sun" class="sun-part" src="./images/sun-part.png">
+        <img id="sun" class="sun-part appearing appearing1" src="./images/sun-part.png">
         <img id="background" class="scenary" src="./images/scenary.png">
     </div>
-    <script>
-        let sun = document.getElementById("sun")
-        let text = document.getElementById("text")
-
-        window.addEventListener("scroll", function(){
-            let value = window.scrollY;
-            sun.style.top = 347 + value * 0.75 + "px";
-            sun.style.width = 100 -  value*0.05  + "%";
-            sun.style.marginLeft =   value*0.024  + "%";
-            sun.style.marginRight =   value*0.4  + "%";
-            text.style.top = (800 - value * 0.25) + "px";
-
-            if (value > 1020){
-                sun.style.visibility="hidden";
-            }
-            else{
-                sun.style.visibility="visible";
-            }
-        })
-    </script>
     <div class = "main-container">
          <!-- Project Links Section -->
     <section class="navigation">
-        <div class="link-div link-div1">
+        <div id="sun1"  class="link-div link-div1">
             <img class="sun sun-1" src="./images/sun.png">
             <a class="link link-1"><h2>Features</h2></a>
         </div>
-        <div class="link-div link-div2 ">
-            <img class="sun sun-2" src="./images/sun.png">
+        <div id="sun2" class="link-div link-div2 ">
+            <img  class="sun sun-2" src="./images/sun.png">
             <a class=" link link-2" href="./about_us.html"><h2>About us</h2></a>
         </div>
-        <div class="link-div link-div3">
-            <img class="sun sun-3" src="./images/sun.png">
+        <div id="sun3" class="link-div link-div3">
+            <img  class="sun sun-3" src="./images/sun.png">
             <a class=" link link-3" href="./terms_of_use.html"><h2>Terms of Use</h2></a>
         </div>
+        <script>
+            let sun = document.getElementById("sun")
+            let text = document.getElementById("text")
+            let textbig = document.getElementById("textbig")
+            let sun1 = document.getElementById("sun1")
+            let sun2 = document.getElementById("sun2")
+            let sun3 = document.getElementById("sun3")
     
+            window.addEventListener("scroll", function(){
+                let value = window.scrollY;
+                sun.style.top = 347 + value * 0.75 + "px";
+                sun.style.width = 100 -  value*0.05  + "%";
+                sun.style.marginLeft =   value*0.024  + "%";
+                sun.style.marginRight =   value*0.4  + "%";
+                text.style.top = (800 - value * 0.25) + "px";
+                textbig.style.bottom = value*0.5 + "px";
+                sun1.style.bottom = 0 + value * 0.3 + "px";
+                sun2.style.bottom = 0 + value * 0.28 + "px";
+                sun3.style.bottom = 0 + value * 0.265  + "px"; 
+                if (value > 1020){
+                    sun.style.visibility="hidden";
+                }
+                else{
+                    sun.style.visibility="visible";
+                }
+            })
+        </script>
     </section>
     <!-- Future Plans Section -->
     <section class="future-plans">
+        <img class="grandpablur grandpablur2" src="./images/grandpa1.png">
+        <img class="grandpablur grandpablur1" src="./images/grandpa1.png">
         <p class="description-project">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
         <!-- Add more content as needed -->
         <div class="button">
-            <h2 class="chat-now">Chat Now!</h2>
+            <h2 class="chat-now">Chat Now!*</h2>
             <img class="arrow" src="./images/arrow.png">
+            <p class="note">*You should have ChatGPT Plus subscription plan to be able to use agents</p>
             <section class="button-itself">
                 <img class="sun1" src="./images/sun1.png">
                 <section>
@@ -89,6 +111,7 @@
                     <a><p>AnAge Agent</p></a>
                 </section>
             </section>
+            <img class="schema" src="./images/schema.png">
         </div>
         
     </section>
@@ -111,8 +134,11 @@
     <section class="project-links">
         <img class="footer-image reversed" src="./images/wave_reversed.png">
         <h2>Project Links</h2>
-        <a class="link-header" href="https://github.com/longevity-genie">
+        <a class="link-header" target="_blank" rel="noopener noreferrer" href="https://github.com/longevity-genie">
             <svg  class="github-logo" width="98" height="96" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="#fff"/></svg>
+        </a>
+        <a class="link-header telegram" target="_blank" rel="noopener noreferrer" href="https://web.telegram.org/a/#-1001603106352">
+            <svg xmlns="http://www.w3.org/2000/svg" height="150" width="150" viewBox="-36 -60 312 360"><defs><linearGradient gradientUnits="userSpaceOnUse" y2="51.9" y1="11.536" x2="28.836" x1="46.136" id="a"><stop offset="0" stop-color="#37aee2"/><stop offset="1" stop-color="#1e96c8"/></linearGradient></defs><g transform="scale(3.4682)"><circle fill="url(#a)" r="34.6" cx="34.6" cy="34.6"/><path fill="#fff" d="M14.4 34.3l23.3-9.6c2.3-1 10.1-4.2 10.1-4.2s3.6-1.4 3.3 2c-.1 1.4-.9 6.3-1.7 11.6l-2.5 15.7s-.2 2.3-1.9 2.7c-1.7.4-4.5-1.4-5-1.8-.4-.3-7.5-4.8-10.1-7-.7-.6-1.5-1.8.1-3.2 3.6-3.3 7.9-7.4 10.5-10 1.2-1.2 2.4-4-2.6-.6l-14.1 9.5s-1.6 1-4.6.1c-3-.9-6.5-2.1-6.5-2.1s-2.4-1.5 1.7-3.1z"/></g></svg></svg>
         </a>
     </section>
 

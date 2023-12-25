@@ -29,7 +29,26 @@ body {
 .header-text{
     text-align: left;
     margin-left: 30px;
+    animation-duration: 0.5s;
+    animation-delay: 0.2s;
+    animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+    animation-fill-mode: backwards;
+    animation-timing-function: ease;
+    animation-name: animate-slide;
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
+@keyframes animate-slide {
+    0% {
+      opacity: 0;
+      transform: translate(0, 20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+
 .header p{
     font-family: 'Saira Condensed', sans-serif;
     font-weight: 500;
@@ -93,7 +112,7 @@ section h2 {
     background-image: url("./images/background.png");
     background-repeat:no-repeat;
     height: 100vh;
-    width: 101%;
+    width: 100%;
     background-size: cover;
     margin-top: -2px;
     margin-left: -1px;
@@ -118,6 +137,7 @@ section h2 {
 }
 
 .project-description h2 {
+    position: relative;
     margin-top: 30px;
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 500;
@@ -126,12 +146,37 @@ section h2 {
     line-height: 1.1;
     width: 29%;
 }
+  .appearing{
+    animation-duration: 0.75s;
+    animation-delay: 0.5s;
+    animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+    animation-fill-mode: backwards;
+    animation-timing-function: ease;
+    animation-name: animate-glow;
+  }
+  .appearing1{
+    animation-delay: 0.75s;
+  }
+  @keyframes animate-glow {
+    0% {
+      opacity: 0;
+      filter: brightness(3) saturate(3);
+      transform: scale(0.8, 0.8);
+    }
+    100% {
+      opacity: 1;
+      filter: brightness(1) saturate(1);
+      transform: scale(1, 1);
+    }
+  }
 
 /* Donors and Affiliations styles */
 .donors-affiliations {
     margin-top: 250px;
     padding-top: 400px;
     background-image: url("./images/background3.png");
+    position: relative;
+    z-index: 9;
 }
 .project-links{
     background-image: url("./images/background4.png");
@@ -174,14 +219,62 @@ section h2 {
 .heales{
     height: 170px;
 }
+.line{
+    height: 4px;
+    width: 50px;
+    background-color: rgb(255, 215, 215);
+}
+.line1{
+    margin-top: 10px;
+}
+.line3{
+    margin-bottom: 10px;
+}
+.menu{
+    margin-left: auto;
+    width: 90px;
+    height: 90px;
+    border: 4px solid rgb(255, 215, 215);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 100px;
+    transition: background-color 0.5s;
+}
+.menu-hamburger{
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+}
+.nav{
+    height: 50px;
+    margin-top:-3px;
+    font-size: 2em;
+    padding: 10px;
+    transition: background-color 0.5s, height 0.5s, border-radius 0.5s;
+    margin-right: 50px;
+    font-weight: 400;
+}
+.nav:hover{
+    background-color: rgb(241, 194, 241, 0.8);
+    border-radius: 20px;
+}
+.menu:hover{
+    background-color: #ad74ad;
+}
 .link-header{
     margin-left: auto;
     margin-right: 4%;
     position: absolute;
-    margin-top: 30vh;
+    margin-top: 275px;
     margin-left: 3%;
 }
-
+.telegram{
+    margin-left: 9%;
+    margin-top: 250px;
+}
 /* Mission styles */
 .mission p {
     font-style: italic;
@@ -227,9 +320,10 @@ h3{
     flex-direction: row;
     justify-content: space-around;
     font-size: 3em;
+    position: relative;
 }
 .navigation{
-    padding-top: 900px;
+    padding-top: 1500px;
     background-repeat:no-repeat;
     background-size: cover;
     width: 85vw;
@@ -239,16 +333,13 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .sun{
+    position: relative;
     height: 300px;
+    pointer-events: none;
 }
-div.link-div.link-div2{
- margin-top: 50px;
-}
-.link-div.link-div3{
-    margin-top: 90px;
-   }
    a.link{
     position: relative;
    }
@@ -300,16 +391,43 @@ a:hover:after{
     width: 100%;
 }
 .future-plans{
-    margin-top: 200px;
+    height: 100bh;
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin-top: -400px;
     color: white;
+    position: relative;
+    z-index: 100;
+}
+.grandpablur, .grandpablur1{
+    position: absolute;
+    width: 102%;
+    z-index:0;
+}
+.grandpablur1{
+    z-index: 3;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto
+}
+.grandpablur2 {
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+    filter: blur(20px);
 }
 .description-project{
     font-size: 1.9em;
-    width: 40%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    color:#534874;
+    width: 35%;
+    margin-left: 50px;
+    color:#ffffff;
+    position: relative;
+    z-index:5;
+    background-color: rgba(75, 64, 107, 0.726);
+    padding: 30px;
+    top: 100px;
+    border-radius: 30px;;
 }
 .footer-image{
     margin-top: -500px;
@@ -326,17 +444,32 @@ a:hover:after{
     font-family: 'Kalam', cursive;
     font-weight: 400;
     font-size: 4em;
+    margin-left: 20px;
 }
 .arrow{
     margin-top: -100px;
-    margin-left: 500px;
+    margin-left: 300px;
+}
+.note{
+    width: 15%;
+    margin-left: 390px;
+    color:rgb(162, 149, 204);
+}
+.schema{
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    margin-bottom: 80px;
 }
 .button{
     display: flex;
-    align-items: center;
+    align-items:start;
     justify-content: center;
     flex-direction: column;
    margin-bottom: -450px;
+   position: relative;
+   z-index:5;
+   margin-left: 140px;
 }
 .button-itself{
     border-top-right-radius: 15%;
