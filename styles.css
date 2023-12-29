@@ -468,7 +468,7 @@ a:hover:after{
 .schema{
     position: absolute;
     z-index: 10;
-    right: 0;
+    right: 20px;
     margin-bottom: 80px;
 }
 .button{
