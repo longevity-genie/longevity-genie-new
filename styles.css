@@ -3,7 +3,13 @@ body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
 }
-
+img{
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
 body {
     font-family: 'Almarai', sans-serif;
     line-height: 1.6;
@@ -313,6 +319,53 @@ h3{
     padding: 10px;
     bottom: 0;
 }
+.container{
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+.slider{
+    max-width: 35%;
+    overflow: hidden;
+    margin-left: 50px;
+    color:#ffffff;
+    position: relative;
+    z-index:5;
+    background-color: rgba(75, 64, 107, 0.726);
+    padding: 30px;
+    top: 100px;
+    border-radius: 30px;;
+}
+.buttons{
+    max-width: 35%;
+    margin-top: 50px;
+    margin-left: 65px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    z-index: 100;
+}
+.slider-prev, .slider-next{
+    width: 150px;
+}
+.slider-next{
+    margin-left: 20px;
+}
+.buttons:hover{
+    cursor: pointer;
+}
+.slider-item{
+    padding: 30px;
+    padding-right: 50px;
+    height: 500px;
+    font-size: 1.7em;
+}
+.slider-line{
+    display: flex;
+    transition: all ease 1s;
+
+}
 
 .main-container{
     position:initial;
@@ -437,7 +490,7 @@ a:hover:after{
     background-color: rgba(75, 64, 107, 0.726);
     padding: 30px;
     top: 100px;
-    border-radius: 30px;;
+    border-radius: 30px;
 }
 .footer-image{
     margin-top: -500px;
@@ -449,15 +502,16 @@ a:hover:after{
 .footer-image.reversed{
     margin-top: 0px;
 }
+
 .chat-now{
-    margin-top: 200px;
+    margin-top: 50px;
     font-family: 'Kalam', cursive;
     font-weight: 400;
     font-size: 4em;
     margin-left: 20px;
 }
 .arrow{
-    margin-top: -100px;
+    margin-top: -130px;
     margin-left: 300px;
 }
 .note{
@@ -469,7 +523,7 @@ a:hover:after{
     position: absolute;
     z-index: 10;
     right: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 170px;
 }
 .button{
     display: flex;
