@@ -37,7 +37,7 @@ function rollSlider(){
     sliderLine.style.transform = "translate(-" + count*width + "px)";
 }
 
-document.addEventListener("touchstart", handleTouchStart, false);
+/*document.addEventListener("touchstart", handleTouchStart, false);
 document.addEventListener("touchmove", handleTouchMove, false);
 
 const logBlock = document.querySelector(".slider")
@@ -73,4 +73,4 @@ function handleTouchMove(event){
     }
     x1 = null;
     y1 = null;
-}
+} */
