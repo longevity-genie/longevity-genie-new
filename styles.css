@@ -336,9 +336,9 @@ h3{
     border-radius: 30px;;
 }
 .buttons{
+    position: relative;
     max-width: 35%;
-    margin-top: 50px;
-    margin-left: 65px;
+    margin-left: 210px;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -502,19 +502,23 @@ a:hover:after{
 }
 
 .chat-now{
-    margin-top: 50px;
+    position: relative;
+    top: 120px;
     font-family: 'Kalam', cursive;
     font-weight: 400;
     font-size: 4em;
     margin-left: 20px;
 }
 .arrow{
-    margin-top: -130px;
+    position: relative;
+    top: 0px;
     margin-left: 300px;
 }
 .note{
     width: 15%;
-    margin-left: 390px;
+    position: relative;
+    margin-left: 530px;
+    top: -100px;
     color:rgb(162, 149, 204);
 }
 .schema{
@@ -525,10 +529,11 @@ a:hover:after{
 }
 .button{
     display: flex;
+    position: relative;
     align-items:start;
     justify-content: center;
     flex-direction: column;
-   margin-bottom: -450px;
+   margin-bottom: -600px;
    position: relative;
    z-index:5;
    margin-left: 140px;
@@ -556,12 +561,12 @@ align-items:end;
     border: 6px solid white;
     padding: 0;
     border-radius: 50%;
-    margin-bottom: -70px;
+    margin-bottom: 10px;
     margin-left: -30px;
 }
 .button-itself section{
     z-index: 10;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
     margin-right: 30px;
     text-align: center;
 }
@@ -641,10 +646,158 @@ font-size: 1.8em;
     }
     .project-description h2 {
         font-size: 2em;
-        width: 60%;
+        width: 52%;
         margin-top: 10px;
     }
     .imagess{
-        margin-top: -900px;
+        margin-top: -650px;
+    }
+    #textbig{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        font-size: 2.5em;
+        width: 70%;
+    }
+    .project-description{
+        height: 60vh;
+        width: 100%;
+    }
+    .main-container{
+        margin-top: -300px;
+    }
+    #text{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        top: 600px;
+        color:rgb(121, 108, 165)
+    }
+    .navigation{
+        padding-top: 600px;
+        margin-bottom: 600px;
+        flex-direction: column;
+    }
+    .link-div2, .link-div3{
+        margin-left: 0px;
+    }
+    .link-1{
+        font-size: 1em;
+       }
+    .link-2{
+        font-size: 0.8em;
+    } 
+    .link-3{
+        font-size: 0.7em;
+    } 
+    a.link-1:after {
+        bottom: 120px;
+    }
+    a.link-2:after{
+        bottom: 100px;
+    }
+    a.link-3:after{
+        bottom: 100px;
+    }
+    .grandpablur, .grandpablur1{
+        position: absolute;
+        width: 102%;
+        z-index:0;
+    }
+    .grandpablur1{
+        margin-left: -100vw;
+        overflow-x: hidden;
+        width: 300vw;
+    }
+    .grandpablur2{
+        width: 302%;
+    }
+    .future-plans{
+        overflow-x: hidden;
+    }
+    .slider{
+        top: 40px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+    }
+    .slider-item{
+        font-size: 1.3em;
+    }
+    .slider-prev, .slider-next{
+        width: 500px;
+    }
+    .slider-next{
+        margin-left: 20px;
+    }
+    .logos-div{
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        gap: 60px;
+    }
+    .longevitygpt{
+        text-align: center;
+    }
+    .button{
+        margin-left: 0px;
+        margin-bottom: 500px;
+    }
+    .schema{
+        position: relative;
+        margin-top: 150px;
+        right: auto;
+        width: 99vw;
+        order: 1;
+        margin-bottom: 50px;
+    }
+    .arrow{
+        position: relative;
+        margin-left: 200px;
+        top: 80px;
+        order: 3;
+    }
+    .chat-now{
+        margin-left: auto;
+        margin-right: auto;
+        top: 800px;
+        order: 2;
+    }
+    .note{
+        margin-left: 0px;
+        width: 60%;
+        position: relative;
+        top: -200px;
+        margin-left: 20%;
+        order: 3;
+        font-size: 1.5em;
+    }
+    .button-itself{
+        position: relative;
+        top: 80px;
+        left: 60px;
+        order: 4;
+    }
+    .donors-affiliations{
+        margin-top: -200px;
+        padding-top: 100px;
+    }
+    .donors-affiliations p{
+        width: 98%;
+    }
+    .link-header{
+        left: 0%;
+        margin-right: auto;
+    }
+    .telegram{
+        left: auto;
+        right: 0%;
+        margin-left: auto;
+    }
+    .buttons{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
